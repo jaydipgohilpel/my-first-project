@@ -8,6 +8,7 @@ import {UsersModule} from './users/users.module';
 import { FunctionCallOnbtnComponent } from './function-call-onbtn/function-call-onbtn.component';
 import { AlleventsComponent } from './allevents/allevents.component';
 import{AllpracticesModule} from './allpractices/allpractices.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,8 @@ import{AllpracticesModule} from './allpractices/allpractices.module';
     AppRoutingModule,
     UsersModule,
     AllpracticesModule,
+    NgbModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

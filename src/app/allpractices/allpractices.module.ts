@@ -7,7 +7,8 @@ import {FormsModule} from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { StylebindingComponent } from './stylebinding/stylebinding.component';
-
+import { BootstrappracticesComponent } from './bootstrappractices/bootstrappractices.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -16,11 +17,13 @@ import { StylebindingComponent } from './stylebinding/stylebinding.component';
     SimpleformComponent,
     HeaderComponent,
     FooterComponent,
-    StylebindingComponent
+    StylebindingComponent,
+    BootstrappracticesComponent
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    NgbModule,
   ],
   exports:[
     PropertybindingComponent,
@@ -28,7 +31,9 @@ import { StylebindingComponent } from './stylebinding/stylebinding.component';
     SimpleformComponent,
     HeaderComponent,
     FooterComponent,
-    StylebindingComponent
+    StylebindingComponent,
+    BootstrappracticesComponent,
   ]
+  
 })
 export class AllpracticesModule { }
