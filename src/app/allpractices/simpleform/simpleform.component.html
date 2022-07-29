@@ -1,0 +1,8 @@
+<p>simpleform works!</p>
+<form #simpleform="ngForm" (ngSubmit)="getvalue(simpleform.value)">
+    <input type="text" ngModel name="username" id="" placeholder="Enter Username"><br><br>
+    <input type="text" ngModel name="age" id="" placeholder="Enter Age"><br><br>
+    <input type="text" ngModel name="address" id="" placeholder="Enter Address"><br><br>
+    <!-- <input type="submit" value="submit"> -->
+    <button type="submit">Submit</button>
+</form> 

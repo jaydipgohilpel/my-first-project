@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { UserListComponent } from './user-list/user-list.component';
 import {UsersModule} from './users/users.module';
 import { FunctionCallOnbtnComponent } from './function-call-onbtn/function-call-onbtn.component';
+import { AlleventsComponent } from './allevents/allevents.component';
+import{AllpracticesModule} from './allpractices/allpractices.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
     FunctionCallOnbtnComponent,
+    AlleventsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    UsersModule
+    UsersModule,
+    AllpracticesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,24 @@
+<p>important allevents!</p>
+<button (click)="myEvents('this is click events')">Click Me</button>
+<br><br>
+keyup<br>
+<input type="text" (keyup.space)="myEvents(txt.value)" #txt>
+<input type="text" (keyup.enter)="myEvents(txt2.value)" #txt2>
+<br>
+keydown
+<input type="text" (keydown)="myEvents(txt3.value)" #txt3>
+<br>
+change
+<input type="text" (change)="myEvents(txt4.value)" #txt4>
+<br>
+blur
+<input type="text" (blur)="myEvents('blure')">
+<br><br>
+<div style="background-color: skyblue;height: 50px;" (mouseover)="myEvents('mouseover Event fire')"
+(mouseleave)="myEvents('mouseleave Event fire')"
+>
+  
+    Mouse Events
+    -mouseover
+    -mouseleave
+</div>

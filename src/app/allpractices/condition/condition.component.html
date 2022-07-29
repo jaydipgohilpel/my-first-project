@@ -1,0 +1,48 @@
+<p>condition works!</p>
+<p *ngIf="show=='yes'; then
+ ifblock 
+ else 
+  elseblock"></p>
+<ng-template #ifblock>
+    If block execute
+</ng-template>
+<ng-template #elseblock>
+    <p>else execute</p>
+</ng-template>
+
+<ng-template [ngIf]="color=='red'">
+    <h5 style="color: red;">this is red</h5>
+</ng-template>
+<ng-template [ngIf]="color=='green'">
+    <h5 style="color: rgb(5, 255, 5);">this is green</h5>
+</ng-template>
+<ng-template [ngIf]="color=='blue'">
+    <h5 style="color: rgb(32, 61, 251);">this is blue</h5>
+</ng-template>
+<ng-template [ngIf]="color=='yellow'">
+    <h5 style="color: rgb(244, 226, 32);">this is yellow</h5>
+</ng-template>
+switch case
+<div [ngSwitch]="color">
+    <p *ngSwitchCase="'red'" style="color: red;"> red case</p>
+    <p *ngSwitchCase="'green'" style="color: rgb(5, 255, 5);"> green case</p>
+    <p *ngSwitchCase="'blue'" style="color: rgb(32, 61, 251);"> blue case</p>
+    <p *ngSwitchCase="'yellow'" style="color: rgb(244, 226, 32);"> yellow case</p>
+
+    <h3>for loop in angular</h3>
+    <p *ngFor="let item of data">
+        {{item}}
+    </p>
+    <h4>array of object</h4>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+        <tr *ngFor="let element of arrayOfObj">
+            <td>{{element.name}}</td>
+            <td>{{element.age}}</td>
+            <td>{{element.city}} </td>
+        </tr>
+    </table>
