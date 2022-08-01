@@ -6,10 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{title}}</title>
+
 </head>
 
 <body>
-<app-header></app-header>
+  <app-header></app-header>
   <!-- <p>title : {{title}}</p>
   <p>Project Name : {{appName}}</p>
   <p>Name : {{name}}</p>
@@ -39,11 +40,21 @@
     <app-condition></app-condition>
   </p>
   
-  <app-simpleform></app-simpleform> -->
-  <br><br><br>
+  <app-simpleform></app-simpleform>
+
   29-07-22  
-  <!-- <app-stylebinding></app-stylebinding> -->
-  <app-bootstrappractices></app-bootstrappractices>
+  <app-stylebinding></app-stylebinding> 
+  <app-bootstrappractices></app-bootstrappractices> 
+  <app-materialui></app-materialui> 
+  30-07-22-->
+  1-08-2022
+
+  <h1>pass data to child components</h1>
+  <p>user works!</p>
+  
+  <div *ngFor="let e of obj">
+    <app-user [object]="e"></app-user>
+  </div>
   <app-footer></app-footer>
 </body>
 

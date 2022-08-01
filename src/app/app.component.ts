@@ -12,10 +12,23 @@ export class AppComponent {
   returnName() {
     return `Function return name : ${this.name}`;
   }
-  obj = {
-    city: 'Bhavnagar',
-    age: "24"
-  }
+  obj = [
+    {
+      name : "Jaydip Gohil",
+      city: 'Bhavnagar',
+      age: "20"
+    },
+    {
+      name : "Jaydip Gohil",
+      city: 'Bhavnagar',
+      age: "21"
+    },
+    {
+      name : "Jaydip Gohil",
+      city: 'Bhavnagar',
+      age: "22"
+    }
+  ]
   array = ["jaydip", "manish", 'umesh'];
   siteUrl = window.location.href;
 }

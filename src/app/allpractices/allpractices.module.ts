@@ -9,6 +9,13 @@ import { FooterComponent } from './footer/footer.component';
 import { StylebindingComponent } from './stylebinding/stylebinding.component';
 import { BootstrappracticesComponent } from './bootstrappractices/bootstrappractices.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MaterialuiComponent } from './materialui/materialui.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatSliderModule} from '@angular/material/slider';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +25,19 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HeaderComponent,
     FooterComponent,
     StylebindingComponent,
-    BootstrappracticesComponent
+    BootstrappracticesComponent,
+    MaterialuiComponent,
+    UserComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     NgbModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule,
+    MatDividerModule,
+    MatSliderModule
   ],
   exports:[
     PropertybindingComponent,
@@ -33,6 +47,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FooterComponent,
     StylebindingComponent,
     BootstrappracticesComponent,
+    MaterialuiComponent,
+    UserComponent
   ]
   
 })

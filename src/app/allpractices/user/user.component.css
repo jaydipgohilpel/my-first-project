@@ -1,0 +1,13 @@
+.box{
+    padding: 10px;
+    color: white;
+    background-color: aqua;
+    width: fit-content;
+    margin-bottom: 10px;
+    
+}
+.box h3
+{
+    display: inline-block;
+    padding: 10px;
+}
