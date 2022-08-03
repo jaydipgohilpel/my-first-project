@@ -15,6 +15,10 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatSliderModule} from '@angular/material/slider';
+import {MatFormField} from '@angular/material/form-field'
+import {MatLabel} from '@angular/material/form-field'
+
+// import {} from '@angular/material'
 import { UserComponent } from './user/user.component';
 
 @NgModule({

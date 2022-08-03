@@ -31,4 +31,8 @@ export class AppComponent {
   ]
   array = ["jaydip", "manish", 'umesh'];
   siteUrl = window.location.href;
+  parentFunction(data:any)
+  {
+    console.warn(data);
+  }
 }
